@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oval Shape</title>
+    <style>
+        *{
+            margin: 15px;
+            padding: 0%;
+        }
+       .rond{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: dashed #55D2ED 15px;
+}#pacman {
+      width: 0px;
+      height: 0px;
+      border-right: 60px solid transparent;
+      border-top: 60px solid black;
+      border-left: 60px solid blue;
+      border-bottom: 60px solid red;
+      border-top-left-radius: 60px ;
+      border-top-right-radius: 60px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+    }
+    #cross {
+        margin:20%;
+      background: red;
+      height: 200px;
+      position: relative;
+      width: 20px;
+    }
+    #cross:after {
+      background: red;
+      content: "";
+      height: 20px;
+      left: -90px;
+      position: absolute;
+      top: 90px;
+      width: 200px;
+    }
+    .cross {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform: rotate(45deg);
+        }
+        .horizontal,
+        .vertical {
+            position: absolute;
+            background-color: #4fc3f7;
+        }
+        .horizontal {
+            width: 200px;
+            height: 20px;
+            top: 50%;
+            left: 0;
+            border-radius: 15px;
+            transform: translateY(-50%);
+        }
+        .vertical {
+            width: 20px;
+            height: 200px;
+            top: 0;
+            left: 50%;
+            border-radius: 15px;
+            transform: translateX(-50%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rond"></div>
+        <div id="pacman"></div>
+        <div id="cross"></div>
+    </div>
+    <div class="cross">
+        
+       
+        <div class="horizontal"></div>
+                
+                
+        
+          
+        <div class="vertical"></div>
+            
+        </div>
+        
+        
+
+</body>
+</html>
